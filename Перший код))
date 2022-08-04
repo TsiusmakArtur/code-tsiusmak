@@ -1,0 +1,52 @@
+<html> 
+<head> 
+    <title>PHP</title> 
+</head>
+<body>
+    <?php /* Можна навіть писати без прив`язки до html, просто вказувати через тайтл та ечьо */
+    echo "Hello Ukraine!<br />";
+    echo "Hello Ukraine!<br";
+    echo "Текст на кирилицею" /* в РНР можна писати кирилицею */
+    echo "<br />"; /*вказую для відступів */
+    $Number = 98;
+    $string = "Ukraine Now";
+    $float = -1.23;
+    $bool = true; /* якщо true = 1, якщо falce = " " */
+    echo "Перемінна Number = $Number";
+    echo "<br />";
+    echo "Перемінна string = $string";
+    echo "<br />"; 
+    echo "Перемінна float = $float";
+    echo "<br />";
+    $Number = 2;
+    echo "Перемінна bool = $bool";
+    echo "<br />"; 
+    define("Ukraine", 1991);
+    echo "<br />";
+    echo "Ukraine"
+    echo defined("Ukraine"); /* цим можна перевірити чи ми вже вводили цю константу, щоб не шукати по всьому коду */
+    $x=54;
+    $y=46;
+    $summ = $x + $y;
+    $diff = $x - $y;
+    $mult = $x * $y;
+    $dill = $x / $y;
+    $vidsotoc = $x % $y;
+    echo "Сума з $x and $y = $summ<br />";
+    echo "Різниця з $x and $y = $diff<br />";
+    echo "Множення з $x and $y = $mult<br />";
+    echo "Ділення з $x and $y = $dill<br />";
+    $f = 500; 
+    $f = $f + 500;
+    echo $f; /* така ж процедура для ділення, множення, тощо */
+$str_1 = "<b>Перша строка з текстом</b> <input type =\"text\" />"; /* має зробити поле для ввода інфи */
+$str_2 = "<i>Друга строка з текстом</i>";
+echo $str_1." ".$str_2." \" \\"; /* від JavaScript можна поставити крапку замість +, <b> and <i> зроблять текст товстим та в курсирі */
+    ?>
+    </body>
+    </html>
+
+
+
+
+
